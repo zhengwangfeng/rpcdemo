@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://code.alibabatech.com/schema/dubbo
+        http://code.alibabatech.com/schema/dubbo/dubbo.xsd
+         http://www.springframework.org/schema/context
+            http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/mvc
+        http://www.springframework.org/schema/mvc/spring-mvc.xsd">
+
+    <!--<mvc:annotation-driven />-->
+
+    <!--&lt;!&ndash; 消费方应用名，用于计算依赖关系，不是匹配条件，不要与提供方一样 &ndash;&gt;-->
+    <!--<dubbo:application name="dubbo-consumer" owner="programmer" organization="dubbox" />-->
+
+    <!--<dubbo:registry address="zookeeper://127.0.0.1:2181"/>-->
+
+    <!--<dubbo:consumer timeout="30000" />-->
+
+    <!--&lt;!&ndash; <dubbo:reference id="demoService" interface="com.dubbo.service.DemoService"/> &ndash;&gt;-->
+    <!--<dubbo:annotation package="com.rpcexample.consumer.service" />-->
+
+    <!--&lt;!&ndash; 把标记了@Controller注解的类转换为bean &ndash;&gt;-->
+    <!--<context:component-scan base-package="com.rpcexample.consumer.controller" />-->
+
+</beans>
